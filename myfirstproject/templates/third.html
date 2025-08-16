@@ -4,4 +4,11 @@
 
 {% block content %}
 <h1>Third Page Extends First Page</h1>
+<h1>{{var}}</h1>
+<h2>{{Greetings}}</h2>
+<ul>
+    {% for eachfruit in myfruits %}
+        <li>{{eachfruit}}</li>
+    {% endfor %}
+</ul>
 {% endblock %}

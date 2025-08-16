@@ -27,4 +27,12 @@ def mysecondpage(request):
     return render(request,'second.html')
 
 def mythirdpage(request):
-    return render(request,'third.html')
+    var = 'hello there'
+    greeting = 'How are You!!'
+    fruits = ['apple','banana','litchi','mango']
+    mydictionary = {
+        "var" : var,
+        "Greetings":greeting,
+        "myfruits":fruits
+    }
+    return render(request,'third.html',context=mydictionary)
