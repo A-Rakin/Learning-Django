@@ -25,3 +25,6 @@ def myfirstpage(request):
 
 def mysecondpage(request):
     return render(request,'second.html')
+
+def mythirdpage(request):
+    return render(request,'third.html')
