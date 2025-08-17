@@ -36,3 +36,6 @@ def mythirdpage(request):
         "myfruits":fruits
     }
     return render(request,'third.html',context=mydictionary)
+
+def myimagepage(request):
+    return render(request,'imagepage.html')
