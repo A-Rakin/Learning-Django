@@ -48,3 +48,6 @@ def myimagepage3(request):
 
 def myimagepage4(request):
     return render(request,'imagepage4.html')
+
+def myform(request):
+    return render(request,'myform.html')
