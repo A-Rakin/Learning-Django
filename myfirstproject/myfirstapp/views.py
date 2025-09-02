@@ -54,9 +54,9 @@ def myform(request):
 
 def submitmyform(request):
     mydictionary = {
-        "var1": request.GET['mytext'],
-        "var2": request.GET['mytextarea'],
+        "var1": request.POST['mytext'],
+        "var2": request.POST['mytextarea'],
         "method" : request.method
     }
-    
+
     return JsonResponse(mydictionary)
