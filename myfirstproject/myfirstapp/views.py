@@ -51,3 +51,11 @@ def myimagepage4(request):
 
 def myform(request):
     return render(request,'myform.html')
+
+def submitmyform(request):
+    mydictionary = {
+        #var1:
+        #var2:
+        "method" : request.method
+    }
+    return JsonResponse(mydictionary)
